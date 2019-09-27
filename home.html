@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+< lang="en" dir="ltr">
 <head>
-<title>Page Title</title>
+	<meta charset="utf-8">
+
+<title></title>
+</head>
+
 
 <style>
 body {
-	background-image: url(" ");
+	background-image: url("abc.jpg ");
         background-repeat:no-repeat;
        background-size:cover;
 } 
@@ -16,14 +20,22 @@ body {
 
 
 
+
 <body>
 
-		<h2>Welcome to the Google Developer Students Club!</h2>
-		You are an integral part of the DSC. We hope you have a great experience with us! :) 
-
+		<h1 style="display:none; id="h></h1>
+		
+		<script>
+			console.log(sessionStorage.getItem("ok"));
+			if(sessionStorage.ok)
+			{
+				document.getElementyId('h').innerHTML="Hi!!"+ sessionStorage.getItem("ok");
+				document.getElementyId('h').style.display="block";
+			}
+		</script>
 
 </body>
 
-</body>
+
 </html>
  

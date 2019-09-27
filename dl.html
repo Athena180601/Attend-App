@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+
+<style>
+body {
+	background-image: url("FIN.jpg ");
+        background-repeat:no-repeat;
+       background-size:cover;
+} 
+</style>
+
+</head>
+
+<body>
+	<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+/* Set a style for the submit button */
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+.btn:hover {
+  opacity: 3;
+}
+</style>
+</head>
+
+ <body>
+  
+
+
+<h1>--------------------------------------ATTENDANCE LOGIN FORM---------------------------------------</h1>
+
+  <form action="C:\Users\Athena\Desktop\final dsc task 1\home.html" class="container">
+    <h1>Login</h1>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" required>
+    <!-- <script>
+	
+	if(document.getElementById("email").value.match(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/))
+</script> -->
+
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+
+    <button type="submit" class="btn">Login</button> 
+   <!--  <button type="submit" class="btn" onclick="window.location.href='file:///C:/Users/Athena/Desktop/final%20dsc%20task%201/home.html'">Login</button> -->
+   <a href=""
+    
+  </form>
+
+<script type="text/javascript">
+  
+	var email=document.getElementById('email');
+	var password=document.getElementById('password');
+	console.log(email);
+	console.log(password);
+	document.getElementById('button').addEventListener('click', function(){
+		if(document.getElementById("email").value.match(/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$/))
+    {
+
+	console.log(email);
+	console.log(password);
+	document.querySelector('.bg-modal').style.display= 'block';
+	document.getElementById('alert').innerText="welcome";
+	}
+	else{
+		console.log(email);
+	console.log(password);
+	document.querySelector('.bg-modal').style.display= 'block';
+	document.getElementById('email').innerText="something is incorrect"+email.value;
+
+  sessionStorage.addItem("k","true");
+      location.href="file:///C:/Users/Athena/Desktop/dsc/home.html"
+      sessionStorage.setItem('ok',document.getElementById('email').value);
+      location.href="file:///C:/Users/Athena/Desktop/dsc/home.html"
+	}
+	})
+	
+	
+</script>
+</a>
+</form>
+</div>
+</body>
+</body>
+</html>
